@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        
+        <form class="weather-form" method="POST">
+            <div class="form-group">
+                <label for="city">City Name</label>
+                <input type="text" id="city" name="name" placeholder="Enter City Name" required>
+            </div>
+            <button type="submit" class="btn">Search Now</button>
+        </form>
+        
+        {% if city_name %}
+        <div class="weather-display active">
+            <h2 class="city-name">{{ city_name }}</h2>
+            <div class="temperature">{{ temp }}&deg;C</div>
+            <div class="weather-condition">{{ weather }}</div>
+            <img class="weather-icon" src="http://openweathermap.org/img/w/{{ icon }}.png" alt="Weather Icon">
+            <div class="temp-range">
+                <div>Min: <span>{{ min_temp }}&deg;C</span></div>
+                <div>Max: <span>{{ max_temp }}&deg;C</span></div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
