@@ -12,7 +12,7 @@ def index():
     if request.method == 'POST':
         city_name = request.form['name']
 
-        url = 'http://api.openweathermap.org/data/2.5/weather?q={city_name}&units=metric&APPID=07a6a960f8187673fed7191b13f02464'
+        url = 'http://api.openweathermap.org/data/2.5/weather?q={city_name}&units=metric&APPID='
         response = requests.get(url.format(city_name)).json()
         
         temp = response['main']['temp']
