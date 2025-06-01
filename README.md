@@ -20,7 +20,8 @@ A simple web application built with Flask that displays current weather informat
 
 ## Screenshot
 
-![Weather App Screenshot](https://i.imgur.com/placeholder.png) *(Replace with actual screenshot)*
+![Screenshot 2025-06-01 113005](https://github.com/user-attachments/assets/b209bc43-0330-4d92-a608-451106eee49a)
+
 
 ## Installation
 
