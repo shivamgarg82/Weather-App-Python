@@ -11,7 +11,7 @@ A simple web application built with Flask that displays current weather informat
 
 - Real-time weather data for any city worldwide
 - Displays:
-  - Current temperature
+  - Current temperature 
   - Weather conditions
   - Minimum and maximum temperatures
   - Weather icon visualization
