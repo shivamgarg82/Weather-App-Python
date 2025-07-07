@@ -4,7 +4,7 @@
 ![Flask](https://img.shields.io/badge/flask-2.0+-green.svg)
 ![OpenWeatherMap](https://img.shields.io/badge/API-OpenWeatherMap-yellow.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
-
+   
 A simple web application built with Flask that displays current weather information for any city using the OpenWeatherMap API.
 
 ## Features 
